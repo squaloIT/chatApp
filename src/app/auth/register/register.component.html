@@ -1,0 +1,17 @@
+<form (ngSubmit)='onSubmit(f)' #f='ngForm'>  
+    <div class="container">
+      <label for="tbEmail"><b>Email</b></label><br/>
+      <input type="email" placeholder="Enter Email" name="tbEmail" ngModel required email #tbEmail="ngModel" >
+      <span class="help-block" #spanEmail *ngIf="!tbEmail.valid && tbEmail.touched">Please enter a valid email!</span>
+  
+      <label for="tbPsw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="tbPsw" ngModel required #tbPsw="ngModel">
+      <span class="help-block" *ngIf="!tbPsw.valid && tbPsw.touched">Please enter a password!</span>
+          
+      <button type="submit" class="btn btn-success" [disabled]="!f.valid && f.dirty">Register</button>
+    </div>
+  
+    <div class="" style="background-color:#f1f1f1; padding:20px;">
+      <button type="button" class="btn btn-danger cancelbtn" [disabled]="f.untouched" (click)='onReset(f)'>Cancel</button>
+    </div>
+  </form>

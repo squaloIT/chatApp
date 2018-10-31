@@ -1,0 +1,59 @@
+#chatWindow {
+  width:450px;
+  height:550px;
+  border:1px solid #222;
+  background-color: #e9eaed;
+  position:fixed;
+  right:50px;
+  bottom:0px;
+  z-index:100;
+  padding-bottom:40px;
+  overflow: scroll;
+}
+#chatWindow #tbMessage {
+  position: fixed;
+  right:235px;
+  bottom:25px;
+  width:262px;
+  height:40px;
+}
+#chatWindow .btnSend {
+  position: fixed;
+  bottom:25px;
+  width:60px;
+  height:40px;
+}
+#chatWindow #btnSendMessage {
+  right:175px;
+}
+#chatWindow #btnGeolocation {
+  right:75px;
+  width:100px;
+}
+
+#chatWindow .messageWrapper .myMessage{
+  margin:5px 10px;
+  padding:5px 10px;
+  color:#3B5999;
+  background-color:#FFF;
+  display:inline-block;
+  float:right;
+}
+#chatWindow .messageWrapper .othersMessage{
+  margin:5px 10px;
+  padding:5px 10px;
+  color:#FFF;
+  background-color:#3B5999;
+  display:inline-block;
+  float:left;
+}
+#chatWindow .messageWrapper .othersMessage a {
+  color:#FFF;
+  font-style: oblique;
+}
+#chatWindow .messageWrapper{
+  width:100%;
+  min-height:50px;
+  word-wrap: break-word;
+  display:block;
+}
