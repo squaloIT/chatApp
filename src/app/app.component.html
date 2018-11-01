@@ -1,17 +1,27 @@
-<app-header></app-header>
-<app-chat-window></app-chat-window>
-<div class="wrapper">
+
+<!-- <div class="wrapper">
   <div class="box">
     <div class="row row-offcanvas row-offcanvas-left">
-      <app-sidenav></app-sidenav>
-
- 
-        <router-outlet></router-outlet>
-<!-- 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 col-xs-12 col-lg-12">
       <router-outlet></router-outlet>
-    </div>
+      /main	 
+ </div>
   </div>
 </div> -->
+
+
+
+
+<app-header></app-header>
+<!-- <app-chat-window></app-chat-window>     -->
+<div class="container">
+  <div class="row row-offcanvas row-offcanvas-left">
+    <div class="col-md-12 col-xs-12 col-lg-12">
+      
+        <app-sidenav></app-sidenav>
+     
+      <div class='col-md-10 col-xs-10 col-lg-10'>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

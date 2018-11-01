@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { ChatWindowComponent } from './chat/chat-window/chat-window.component';
+import { MainComponent } from './profile/main/main/main.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ChatWindowComponent } from './chat/chat-window/chat-window.component';
     HomeComponent,
     HeaderComponent,
     SidenavComponent,
-    ChatWindowComponent
+    ChatWindowComponent,
+    MainComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

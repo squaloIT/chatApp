@@ -39,7 +39,7 @@ export class AuthService {
     return this.token;
   }
   isAuthenticated() {
-    console.log(this.token);
+    // console.log(this.token);
     return this.token != null; // "asdas"!=null
   }
   logOut(): any {
