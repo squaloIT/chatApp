@@ -4,20 +4,23 @@ form {border: 3px solid #f1f1f1;}
 input[type=text], input[type=password], input[type=email] {
     width: 96%;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 8px 15px;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
-
+label {
+    margin: 8px 15px;
+    color:#FFF;
+}
 button {
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 8px 15px;
     border: none;
     cursor: pointer;
-    width: 96%;
+    /* width: 96%; */
 }
 
 button:hover {

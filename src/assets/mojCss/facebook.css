@@ -54,11 +54,11 @@ hr {
 }
 
 .box {
-   bottom: 0; /* increase for footer use */
-   left: 0;
-   position: absolute;
-   right: 0;
-   top: 0;
+   /* bottom: 0; increase for footer use */
+   /* left: 0; */
+   /* position: absolute; */
+   /* right: 0; */
+   /* top: 0; */
    background-color:#444444;
  /*
    background-image:url('/assets/example/bg_suburb.jpg');
@@ -108,6 +108,7 @@ hr {
    padding:0px;
  padding-top:15px;
  height:100%;
+ position:static;
 }
 
 #sidebar, #sidebar a, #sidebar-footer a {
