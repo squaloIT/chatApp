@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModel } from './app-routing.module';
@@ -13,6 +14,9 @@ import { ProfileComponent } from './profile/profile.component';
 import { RightColumnComponent } from './profile/main/right-column/right-column.component';
 import { LeftColumnComponent } from './profile/main/left-column/left-column.component';
 import { FooterComponent } from './profile/main/footer/footer.component';
+import { SidenavListComponent } from './sidenav-list/sidenav-list.component';
+import { SidenavListItemComponent } from './sidenav-list/sidenav-list-item/sidenav-list-item.component';
+import { UserProfile } from './profile/user-profile.service';
 
 @NgModule({
   declarations: [
@@ -25,13 +29,16 @@ import { FooterComponent } from './profile/main/footer/footer.component';
     ProfileComponent,
     RightColumnComponent,
     LeftColumnComponent,
-    FooterComponent
+    FooterComponent,
+    SidenavListComponent,
+    SidenavListItemComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModel
+    AppRoutingModel,
+    HttpClientModule
   ],
-  providers: [AuthService],
+  providers: [AuthService, UserProfile],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

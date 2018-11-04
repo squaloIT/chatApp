@@ -13,7 +13,7 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
   }
   onSubmit(form: NgForm) {
-    this.authService.registerUser(form.value.tbEmail, form.value.tbPsw);
+    this.authService.registerUser(form.value.tbEmail, form.value.tbPsw, form.value.tbUsername);
   }
   onReset(form: NgForm) {
     form.reset();
